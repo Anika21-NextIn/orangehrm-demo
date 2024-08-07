@@ -1,3 +1,5 @@
+package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,7 +39,7 @@ public class LoginPage {
         lblUsername.click();
         cbUserMenu.get(3).click();
 
-//        LoginPage loginPage = new LoginPage(driver);
+//        pages.LoginPage loginPage = new pages.LoginPage(driver);
 //        loginPage.lblUsername.click();
 //        loginPage.btnLogout.get(3).click();
     }

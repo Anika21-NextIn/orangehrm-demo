@@ -1,3 +1,5 @@
+package config;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -7,7 +9,7 @@ import java.time.Duration;
 
 
 public class Setup {
-    WebDriver driver;
+   public WebDriver driver;
     @BeforeTest
     public void setup(){
         driver = new ChromeDriver();
@@ -17,7 +19,7 @@ public class Setup {
     }
     @AfterTest
     public void closeBrowser(){
-//        LoginPage loginPage = new LoginPage(driver);
+//        pages.LoginPage loginPage = new pages.LoginPage(driver);
 //       loginPage.doLogout();
 
        // driver.quit();
