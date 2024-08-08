@@ -22,7 +22,7 @@ public class Setup {
 //        pages.LoginPage loginPage = new pages.LoginPage(driver);
 //       loginPage.doLogout();
 
-       // driver.quit();
+        driver.quit();
     }
 
 }
