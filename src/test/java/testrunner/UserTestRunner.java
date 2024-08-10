@@ -12,7 +12,7 @@ import java.io.IOException;
 
 public class UserTestRunner extends Setup {
     LoginPage loginPage;
-    @Test(priority = 1)
+    @Test(priority = 2, description = "New user can login successfully by valid creds")
     public void doLoginByUser() throws IOException, ParseException {
         loginPage=new LoginPage(driver);
        String userName =  Utils.getUser().get("userName").toString();

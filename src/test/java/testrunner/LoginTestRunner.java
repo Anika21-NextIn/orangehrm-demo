@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class LoginTestRunner extends Setup {
     LoginPage loginPage;
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1, description = "Admin can't login without valid creds")
     public void doLoginWithWrongCreds(){
         loginPage=new LoginPage(driver);
         loginPage.doLogin("admin", "wrongpass");
@@ -25,7 +25,7 @@ public class LoginTestRunner extends Setup {
         String textExpected="Invalid credentials";
         Assert.assertTrue(textActual.contains(textExpected));
     }
-    @Test(priority = 2)
+    @Test(priority = 2, groups = "smoke", description = "Admin can login with valid creds")
     public void doLoginWithValidCreds() throws IOException, ParseException {
         loginPage=new LoginPage(driver);
 
